@@ -1,0 +1,50 @@
+@use "./variables" as *;
+
+.tweetBox {
+  padding-bottom: 10px;
+  border-bottom: 8px solid $cTwitterBackground;
+  padding-right: 10px;
+
+  & > form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    padding: 20px;
+    display: flex;
+
+    & > img {
+      width: 40px;
+      height: 40px;
+    }
+
+    & > input {
+      flex: 1;
+      font-size: 20px;
+      margin-left: 20px;
+      border: none;
+    }
+  }
+
+  &__imageInput {
+    border: none;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  &__tweetButton {
+    background-color: $cTwitter !important;
+    color: $cWhite !important;
+    font-weight: 900 !important;
+    width: 130px;
+    height: 40px;
+    border-radius: 30px !important;
+    margin-top: 20px;
+    margin-left: auto !important;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

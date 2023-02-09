@@ -1,0 +1,38 @@
+@use "./variables" as *;
+
+.sidebar {
+  border-right: 1px solid $cTwitterBackground;
+  width: 280px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &__userIcon {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-right: 10px;
+    padding-top: 10px;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+
+  &__tweet {
+    background-color: $cTwitter !important;
+    color: $cWhite !important;
+    font-weight: 900 !important;
+    border: none !important;
+    border-radius: 30px !important;
+    height: 50px;
+    margin-top: 20px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

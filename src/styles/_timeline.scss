@@ -1,0 +1,33 @@
+@use "./variables" as *;
+@use "./breakpoint" as *;
+
+.timeline {
+  width: 60%;
+  border: 1px solid $cTwitterBackground;
+  overflow-y: scroll;
+
+  @include mq("tab") {
+    width: calc(100% - 80px);
+  }
+
+  @include mq("sp") {
+    width: 100%;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__header {
+    position: sticky;
+    top: 0;
+    background-color: $cWhite;
+    z-index: 100;
+    border: 1px solid $cTwitterBackground;
+    padding: 5px 20px;
+
+    & > h2 {
+      font-size: 20px;
+      font-weight: 800;
+    }
+  }
+}
